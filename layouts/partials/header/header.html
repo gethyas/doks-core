@@ -238,17 +238,7 @@
         </button>
         {{ end -}}
 
-        <!-- Social menu -->
-        {{ if .Site.Menus.social -}}
-        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
-          {{ range .Site.Menus.social -}}
-            <li class="nav-item">
-              <a class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 visually-hidden">{{ .Name | safeHTML }}</small></a>
-            </li>
-          {{ end -}}
-        </ul>
-        {{ end -}}
-
+        {{ partial "header/header-menu-social.html" . }}
 
         <!-- Navbar button mobile -->
         {{ if site.Params.doks.navBarButton -}}
