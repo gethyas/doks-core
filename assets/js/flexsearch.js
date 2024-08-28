@@ -12,15 +12,13 @@
  * A JavaScript file for flexsearch.
  */
 
-// import * as FlexSearch from 'flexsearch';
-import Index from 'flexsearch';
+import FlexSearch from 'flexsearch';
 
 (function () {
 
   'use strict';
 
-  // const index = new FlexSearch.Document({
-  const index = new Index.Document({
+  const index = FlexSearch.Document({
     tokenize: 'forward',
     document: {
       id: 'id',
