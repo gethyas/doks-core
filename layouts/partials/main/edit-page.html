@@ -12,7 +12,7 @@
   {{ $parts = $parts | append "browse" site.Params.doks.docsRepoBranch }}
 {{ end }}
 
-{{ if isset .Site.Params "docsreposubpath" }}
+{{ if isset .Site.Params.doks "docsreposubpath" }}
   {{ if not (eq site.Params.doks.docsRepoSubPath "") }}
     {{ $parts = $parts | append site.Params.doks.docsRepoSubPath }}
   {{ end }}
